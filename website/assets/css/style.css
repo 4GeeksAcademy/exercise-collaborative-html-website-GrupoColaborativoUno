@@ -1,3 +1,10 @@
-body{
-    background: #BDBDBD;
+.alto{
+    height: 400px;
+    width: auto;
+}
+
+.claseCssSergio{
+border-radius: 100%;
+width: auto;
+height: 400px;
 }

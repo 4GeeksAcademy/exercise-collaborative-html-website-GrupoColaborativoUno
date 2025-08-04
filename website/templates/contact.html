@@ -1,2 +1,171 @@
-<!-- your html code here -->
-<p>Hello, I'm contact.html</p>
+<div class="container">
+  <div class="p-4 mb-4 rounded" style="
+    background-color: #356351;
+    color: white;
+    border: 2px solid #0c2c1e;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+  ">
+
+    <h4 class="fw-bold text-success" style="text-shadow: 1px 1px 0 #000000ca, 2px 2px 0 #33544670, 3px 3px 0 #162823;">
+      BREAKING CONTACT
+    </h4>
+
+    <hr>
+
+    <p>
+      ¿Listo para una suscripción que realmente cambia las reglas del juego? <br><br>
+      Hola, aquí Heisenberg… digo, tu guía en un mundo donde cada detalle importa y las historias comunes se
+      transforman.<br><br>
+      En nuestro newsletter encontrarás contenidos seleccionados más puros que el 99%, análisis exclusivos y
+      datos que
+      no llegan al mercado público, <br>
+      además de inspiración para cocinar tus proyectos con la precisión de un maestro. No dejes que este mundo
+      te pase
+      de largo.
+    </p>
+
+    <hr>
+
+    <p>
+      Únete a nosotros y recibe tu dosis de conocimiento y motivación directo en tu bandeja de entrada.
+    </p>
+
+
+    <div class="d-flex justify-content-center mt-3 mb-4">
+      <button class="btn btn-success opacity-75 btn-lg px-5 py-3 border-white fw-bold" data-bs-toggle="modal"
+        data-bs-target="#newsletterModal"
+        style="text-shadow: 1px 1px 0 #000000ca, 2px 2px 0 #33544670, 3px 3px 0 #162823;">
+        ¡Únete!
+      </button>
+    </div>
+
+
+    <p>
+      En un mundo donde cada movimiento tiene su peso y las consecuencias pueden ser irreversibles, no dejes tu defensa
+      al azar.
+    </p>
+    <div class="d-flex justify-content-center mt-3 mb-4">
+      <button class="btn btn-success opacity-75 btn-lg px-5 py-3 border-white fw-bold" data-bs-toggle="modal"
+        data-bs-target="#contactModal"
+        style="text-shadow: 1px 1px 0 #000000ca, 2px 2px 0 #33544670, 3px 3px 0 #162823;">
+        ¡Haz click!
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="newsletterModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content text-light shadow-lg border border-dark fw-bold" style="
+      background-image: url('https://cdn.dribbble.com/userupload/4088948/file/original-6a18fcd913ee262d43c2ef9178d6d0f3.png?resize=2048x1536&vertical=center');
+      background-size: cover; background-position: center; background-repeat: no-repeat;
+    ">
+      <form id="modalForm" style="background-color: rgba(75, 74, 74, 0.5); padding: 1rem; border-radius: 0.5rem;">
+        <div class="modal-header bg-transparent border-bottom border-light justify-content-center">
+          <h5 class="modal-title text-white fw-bold"
+            style="text-shadow: 1px 1px 0 #000000ca, 2px 2px 0 #33544670, 3px 3px 0 #162823;">
+            Conviértete en parte de la fórmula élite
+            <strong><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                fill="#245b38">
+                <path
+                  d="M200-120q-51 0-72.5-45.5T138-250l222-270v-240h-40q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760h-40v240l222 270q32 39 10.5 84.5T760-120H200Zm0-80h560L520-492v-268h-80v268L200-200Zm280-280Z" />
+              </svg></strong>
+          </h5>
+        </div>
+
+        <div class="container py-4">
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="firstName" class="form-label text-white">First name</label>
+              <input type="text" class="form-control bg-light text-success border-dark" id="firstName"
+                placeholder="Walter" required>
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" class="form-label text-white">Last name</label>
+              <input type="text" class="form-control bg-light text-success border-dark" id="lastName"
+                placeholder="White" required>
+            </div>
+          </div>
+
+          <p class="text-white medium fst-italic">
+            Elemento de la fórmula<br>
+            Ingresa tu email, elige tu componente y especifica el porcentaje de pureza para unirte a la química
+            exclusiva de nuestra comunidad.
+          </p>
+
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label for="email" class="form-label text-white">Email</label>
+              <input type="email" class="form-control bg-light text-success border-dark" id="email"
+                placeholder="breakingbad@email.com" required>
+            </div>
+            <div class="col-md-4">
+              <label for="inputComponent" class="form-label text-white">Componente</label>
+              <select id="inputComponent" class="form-select bg-light text-success border-dark" required>
+                <option value="" disabled selected></option>
+                <option value="acido">Ácido</option>
+                <option value="catalizador">Catalizador</option>
+                <option value="disolvente">Disolvente</option>
+                <option value="met">Met</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="purityPercentage" class="form-label text-white">Pureza (%)</label>
+              <input type="number" class="form-control bg-light text-success border-dark" id="purityPercentage" min="0"
+                max="100" step="0.1" placeholder="99.9" required>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label text-white">Mensaje</label>
+            <textarea class="form-control bg-light text-success border-dark" id="message" rows="3"
+              placeholder="¿Lo entiendes… o necesitas otra dosis?"></textarea>
+          </div>
+        </div>
+
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-success fw-bold border-white"
+            style="text-shadow: 1px 1px 0 #000000ca, 2px 2px 0 #33544670, 3px 3px 0 #162823;">¡Únete!</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="modal fade" id="contactModal" tabindex="-1">
+  <div class="modal-dialog modal-xl" style="max-width: 750px;">
+    <div class="modal-content p-4 mb-4 rounded" style="
+      background-color: #1e3a34;
+      color: white;
+      border: 2px solid #0c2c1e;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+    ">
+      <div class="modal-header border-0 py-0">
+        <h5 class="text-white fw-bold mb-3" style="text-shadow: 1px 1px 0 #388757ca;">
+          ¿Necesitas ayuda?
+        </h5>
+      </div>
+
+      <div class="modal-body d-flex justify-content-center">
+        <img src="assets/img/CallSaul.jpg" alt="picture" width="700" height="550">
+      </div>
+
+      <div class="modal-footer justify-content-center">
+        <button class="btn btn-success opacity-75 btn-lg px-5 py-3 border-white fw-bold" data-bs-dismiss="modal"
+          style="text-shadow: 1px 1px 0 #000000ca, 2px 2px 0 #33544670, 3px 3px 0 #162823;">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
